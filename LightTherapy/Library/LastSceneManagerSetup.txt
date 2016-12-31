@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/LightPulse.unity
+- path: Assets/LightPulseEveryOtherFrame.unity
   isLoaded: 1
   isActive: 1

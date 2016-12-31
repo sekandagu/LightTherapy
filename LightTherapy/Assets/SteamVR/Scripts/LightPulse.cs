@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -73,7 +74,12 @@ public class LightPulse : MonoBehaviour
 		if (lightInfo.Length > 4)
 		lightInfo = lightInfo.Substring(0, 4);
 		lightValue.text = "Light Strength : " + lightInfo + "/ 1";
-	}
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            SceneManager.LoadScene("LightPulseEveryOtherFrame");
+        }
+    }
 
 	void ShowCanvas()
 	{
